@@ -1,0 +1,28 @@
+extends layout
+
+block content
+
+	.forms-main
+		.forms-inner
+			form(method='post', action='')
+				fieldset
+					h1 Login
+					if error
+						.alert.alert-dismissable.alert-danger.login-fail
+						button.close(type='button', data-dismiss='alert') &times;
+						p.
+							#(error)
+					p
+						.forms
+							label(for='username') Username:&nbsp;
+							input#username(type='username', name='username', placeholder='Username', autofocus)
+							br
+							br
+						.forms
+							label(for='password') Password:&nbsp;
+							input#password(type='password', name='password', placeholder='Password')
+							br
+							br
+						.forms
+							.forms-submit
+								button(type='submit') Login

@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+	if user
+		.userinfo
+			.userinfo-inner
+
+				h1.user #{user.username}
+				br
+				br
+				span.email EMAIL: #{user.email}
+				br
+				br
+				span.fullname NAME: #{user.fullName}
+				br
+				br
+				TOTAL PAGES READ: 
+				|	<span id="pagesnumber">0</span>
+				br
+				br
+				TOTAL BOOKS:
+				| <span id="booknumber">0</span>
+
+
+
+	else
+		.need-login
+			.need-login-inner
+				p Please log in to continue. 
+				a(href="/login") Feel free to click me and I'll take you there.

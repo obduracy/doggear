@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+	if user
+		.library
+			.library-inner
+				#bookCovers
+
+	else
+		.need-login
+			.need-login-inner
+				p Please log in to continue. 
+				a(href="/login") Feel free to click me and I'll take you there.
+

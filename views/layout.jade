@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat')
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+	body
+
+	.container
+		.header
+			h1.mainTitle DOGGEAR
+			p your digital bookmarker
+
+			ul.nav
+				li
+					a(href="/") Home
+				if user
+					li 
+						a(href="/library") Library
+					li
+						a(href="/profile") Profile
+					.logged-in
+						| Hi there, 
+						span.username #{user.username}
+						br
+						a(href="/logout") Logout
+				else
+					li
+						a(href="/login") Login
+					li
+						a(href="/register") Register
+					.logged-in
+						| You're not logged in.
+
+
+		block content
+		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+		script(src='/javascripts/global.js')
+
+		.footer
+			a(href="egar4c@mail.missouri.edu" id="contact") Contact Us
+			p 2015 Liz Apple, All Rights Reserved 

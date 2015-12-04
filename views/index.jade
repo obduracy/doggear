@@ -1,0 +1,76 @@
+extends layout
+
+block content
+	// Wrapper
+
+	if user
+		#wrapper
+				// Book INFO
+				#bookInfo
+						h2 Book Info
+						#bookInfoBox
+							p
+									span.infoTitles Title:
+									|	<span class="colour-change" id="bookInfoTitle"></span>
+									br
+									span.infoTitles Author:
+									|	<span class="colour-change" id="bookInfoAuthor"></span>
+									br
+									span.infoTitles Genre:
+									|	<span class="colour-change" id="bookInfoGenre"></span>
+									br
+									span.infoTitles Description:
+									|	<span class="colour-change" id="bookInfoDescription"></span>
+
+					// /BOOK INFO
+
+
+				// BOOK LIST AND ADD BOOK WRAPPER
+				#bookMain
+
+					// BOOK LIST
+
+					
+					#bookList
+							h2 Book List
+							table
+								thead
+									th Title
+									th Page
+									th Delete Entry
+								tbody
+
+							// /BOOK LIST
+
+					// ADD BOOK
+					if user
+					#addBook
+						h2#addBookTitle Add Book
+						#addBookInput
+							fieldset
+									input#inputBookTitle(type="text", placeholder="Title")
+									br
+									input#inputBookPage(type="text", placeholder="Page")
+									br
+									input#inputBookAuthor(type="text", placeholder="Author")
+									br
+									input#inputBookGenre(type="text", placeholder="Genre")
+									br
+									input#inputBookDescription(type="text", placeholder="Description")
+									br
+									input#inputBookPicture(type="text", placeholder="Picture URL")
+									br
+									input#inputBookUser(type="hidden", name="user" value="#{user.username}")
+									br
+									br
+									button#btnAddBook Add Book
+					// /ADD BOOK
+				// /BOOK LIST AND ADD BOOK WRAPPER
+
+	else
+		.need-login
+			.need-login-inner
+				p Please log in to continue. 
+				a(href="/login") Feel free to click me and I'll take you there.
+
+			// /WRAPPER

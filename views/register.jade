@@ -1,0 +1,51 @@
+extends layout
+
+block content
+
+	.forms-main
+		.forms-inner
+			form(method='post', action='')
+				fieldset
+					h1 Create a New Account
+					if error
+						.alert.alert-dismissable.alert-danger.register-fail
+							button.close(type='button', data-dismiss='alert') &times;
+							p
+								#(error)
+					p
+						
+						.forms
+							label(for='firstname') First Name:&nbsp;
+							input#firstname(name='firstname', type='text', placeholder='First Name', autofocus)
+							br
+							br
+						.forms
+							label(for='lastname') Last Name:&nbsp;
+							input#lastname(name='lastname', type='text', placeholder='Last Name', autofocus)
+							br
+							br
+						.forms
+							label(for='username') Username:&nbsp;
+							input#username(name='username', type='text', placeholder='Username', autofocus)
+							br
+							br
+						.forms
+							label(for="email") Email:&nbsp;
+							input#email(name='email', type='email', placeholder='Email', autofocus)
+							br
+							br
+						.forms
+							label(for='password') Password:&nbsp;
+							input#password(name='password', type='password', placeholder='Password')
+							br
+							br
+						.alert.alert-dismissable.alert-info
+							button.close(data-dismiss='alert', type='button')
+							strong &nbsp; NOTE:&nbsp;
+							Your password must be between 8 and 100 characters in length and must contain lowercase letters, uppercase letters, and numbers. 
+							br
+							br
+
+						.forms
+							.forms-submit
+								button(type='submit') Register

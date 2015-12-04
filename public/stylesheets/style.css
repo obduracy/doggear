@@ -1,0 +1,487 @@
+/* 
+whitish platinum - #e7e8e7;
+wheatfield beige - #f0da94;
+sunburnt gold - #d68829;
+warm and cosy black - #2c2422;
+lively olive peridot - #b2b874;
+*/
+
+/* gradients generated via http://www.colorzilla.com/gradient-editor/ */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+body {
+  padding: 30px;
+  background: #b2b874;
+  color: #2c2422;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+		/* button gradient
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#546b23+0,b6c984+88,546b23+90,62774f+100 */
+		background: rgb(84,107,35); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(84,107,35,1) 0%, rgba(182,201,132,1) 88%, rgba(84,107,35,1) 90%, rgba(98,119,79,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(84,107,35,1) 0%,rgba(182,201,132,1) 88%,rgba(84,107,35,1) 90%,rgba(98,119,79,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(84,107,35,1) 0%,rgba(182,201,132,1) 88%,rgba(84,107,35,1) 90%,rgba(98,119,79,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#546b23', endColorstr='#62774f',GradientType=0 ); /* IE6-9 */
+		/* button drop-shadow */
+		-webkit-box-shadow: 0px 2px 5px 2px rgba(148,126,107,0.65);
+		-moz-box-shadow: 0px 2px 5px 2px rgba(148,126,107,0.65);
+		box-shadow: 0px 2px 5px 2px rgba(148,126,107,0.65);
+		border: none;
+		padding: 15px;
+		border-radius: 5px;
+		color: #e7e8e7;
+		transition-property: color, background;
+	  transition-duration: 0.3s;
+	}
+
+/* this'll make the button look lighter when hovered over */
+
+button:hover {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#677c48+1,b6c984+88,546b23+90,718464+100 */
+	background: rgb(103,124,72); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(103,124,72,1) 1%, rgba(182,201,132,1) 88%, rgba(84,107,35,1) 90%, rgba(113,132,100,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(103,124,72,1) 1%,rgba(182,201,132,1) 88%,rgba(84,107,35,1) 90%,rgba(113,132,100,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(103,124,72,1) 1%,rgba(182,201,132,1) 88%,rgba(84,107,35,1) 90%,rgba(113,132,100,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#677c48', endColorstr='#718464',GradientType=0 ); /* IE6-9 */
+	}
+
+/* this'll make it look like the button is being 'pressed' when clicked */
+
+button:active {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5e7239+1,b6c984+92,546b23+94,62774f+100 */
+	background: rgb(94,114,57); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(94,114,57,1) 1%, rgba(182,201,132,1) 92%, rgba(84,107,35,1) 94%, rgba(98,119,79,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(94,114,57,1) 1%,rgba(182,201,132,1) 92%,rgba(84,107,35,1) 94%,rgba(98,119,79,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(94,114,57,1) 1%,rgba(182,201,132,1) 92%,rgba(84,107,35,1) 94%,rgba(98,119,79,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e7239', endColorstr='#62774f',GradientType=0 ); /* IE6-9 */
+	color: #cecece;
+	outline: none;
+	}
+
+button:focus {
+		outline: none;
+	}
+
+/* main layout section */
+.need-login {
+	position: absolute;
+	top: 110px;
+	left: 25%;
+	width: 50%;
+	height: 650px;
+	background: #2c2422;
+	color: #f0da94;
+}
+
+	.need-login-inner {
+		margin: 25%;
+		text-align: center;
+		font-size: 1.5em;
+	}
+
+		.need-login-inner a {
+			text-decoration: none;
+			color: #f0da94;
+		}
+
+		.need-login-inner a:hover {
+			color: #b2b874;
+		}
+
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90px;
+	width: 100%;
+	padding: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
+background: #f2f5f6; /* Old browsers */
+background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+	.header a {
+		color: #2c2422;
+		font-weight: bolder;
+	}
+
+	.header p {
+		margin-top: -5px;
+		margin-bottom: -5px;
+		text-align: center;
+	}
+
+
+
+.mainTitle {
+	color: #d68829;
+	margin-top: -10px;
+	margin-bottom: -5px;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+.nav {
+	text-align: center;
+}
+
+	.nav li {
+		display: inline;
+		margin: 0px 50px 50px 50px;
+		font-size: 21px;
+	}
+	
+		.nav li a {
+			text-decoration: none;
+		}
+
+			.nav li a:hover {
+				font-style: italic;
+			}
+
+.logged-in {
+	position: fixed;
+	top: 5px;
+	right: 3%;
+	text-align: center;
+}
+
+	.logged-in a {
+		text-decoration: none;
+	}
+
+	.logged-in a:hover {
+		font-style: italic;
+		color: #d68829;
+	}
+
+
+
+/* index/home page section */
+
+#wrapper {
+	padding-left:312px;
+	position:absolute;
+	top: 110px;
+	background: #2c2422;
+	height: 640px;
+	width: 95%;
+	padding: 10px;
+	-webkit-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	-moz-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+
+}
+
+#bookMain {
+	position: fixed;
+	margin-left: 23%;
+	width: 62.5%;
+	height: 500px;
+	padding: 30px;
+	margin-top: 30px;
+	background: #f0da94;
+	border: 2px solid #e7e8e7;
+	overflow: scroll;
+}
+
+#addBook {
+	position: relative;
+	float: right;
+	margin-right: 80px;
+}
+
+#bookList {
+	position: relative;
+	float: left;
+	margin:0 0 30px 0;
+}
+	#bookList h2 {
+		text-align: center;
+		font-size: 2em;
+	}
+
+	#bookList table {
+		border-collapse:separate;
+		border-spacing:0px;
+		background:#CCC;
+		width: 500px;
+	}
+		#bookList table th {
+			/*background:#2c2422;*/
+			/* attempt at gradient */
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c2422+0,000000+100 */
+			background: #2c2422; /* Old browsers */
+			background: -moz-linear-gradient(top, #2c2422 0%, #000000 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #2c2422 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #2c2422 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2422', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+			copy
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+			color: #b2b874;
+		}
+		#bookList table tbody {
+			padding:0; margin:0;
+			border-collapse:collapse;
+			border-spacing:0px;
+		}
+			#bookList table td {
+				background:#e7e8e7; 
+				padding:10px 10px;
+				text-align:center;
+			}
+
+				#bookList table td a {
+					text-decoration: none;
+					color: #d68829;
+				}
+
+				#bookList table td a:hover {
+					font-style: italic;
+					color: #b2b874;
+				}
+
+	#addBook {
+		text-align: center;
+		font-size: 1em;
+	}
+
+	#addBookTitle {
+		font-size: 2em;
+	}
+
+	#addBookInput input {
+		margin: 10px;
+		padding: 5px;
+		-webkit-transition-property: width; /* Safari */
+    transition-property: outline;
+    transition-duration: 0.4s;
+	}
+
+	#addBookInput input:focus {
+		outline-color: #b2b874;
+	}
+
+
+#bookInfo {
+	width:250px;
+	position:fixed;
+	top: 200px;
+	left: 50px;
+}
+	#bookInfo h2 {
+		color: #d68829;
+		font-size: 2em;
+		text-align: center;
+	}
+	#bookInfoBox {
+		padding:15px;
+		border:1px solid #CCC;
+		height: 425px;
+		color: #f0da94;
+		overflow: scroll;
+		background:rgba(80,120,255,0.05);
+    -webkit-transition-property: color, background, opacity, border; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+		transition-property: color, background, opacity, border;
+    transition-duration: 1s;
+	}
+
+	#bookInfoBox:hover {
+		background: #e7e8e7;
+		opacity: 0.7;
+		color: #2c2422;
+		border: 1px solid #d68829;
+	}
+
+
+	.infoTitles {
+		color: #d68829;
+		font-weight: bolder;
+	}
+
+
+.library {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	text-align: center;
+}
+
+.bookcover-list {
+	padding: 10px;
+}
+
+.bookcovers {
+	max-height: 400px;
+}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
+
+/* profile page 
+
+(later on I might make this fancier and give users the ability to specify a profile picture)
+*/
+
+.userinfo {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	position: relative;
+	top: 80px;
+	width: 60%;
+	height: 650px;
+	background: #e7e8e7;
+	border-right: 6px solid #2c2422;
+	border-left: 6px solid #2c2422;
+	/* drop shadow */
+	-webkit-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	-moz-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+
+}
+
+.userinfo-inner {
+	padding: 100px;
+}
+
+h1.user {
+	color: #d68829;
+	font-size: 3.5em;
+}
+
+
+/* library page */
+
+.library {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	position: relative;
+	top: 80px;
+	width: 60%;
+
+	background: #e7e8e7;
+	border-right: 6px solid #2c2422;
+	border-left: 6px solid #2c2422;
+	/* drop shadow */
+	-webkit-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	-moz-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+}
+
+.library-inner {
+	overflow: scroll;
+	width: 50%;
+	position: relative;
+	left: 20%;
+
+	padding: 50px;
+}
+
+.bookcover-list {
+	width: 500px;
+	display: inline;
+}
+
+/* login/registration sections */
+
+.forms-main {
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	position: relative;
+	top: 80px;
+	width: 60%;
+	height: 650px;
+	background: #2c2422;
+	/* drop shadow */
+	-webkit-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	-moz-box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+	box-shadow: 0px 13px 19px 8px rgba(86,87,57,1);
+}
+
+	.forms-inner {
+		position: relative;
+		left: 10%;
+		background: #f0da94;
+		height: 70%;
+		width: 52%;
+		padding-right: 100px;
+		padding-left: 100px;
+		padding-bottom: 150px;
+		padding-top: 50px;
+		text-align: center;
+	}
+
+		.forms-inner input {
+			margin: 5px;
+			padding: 5px;
+			-webkit-transition-property: width; /* Safari */
+	    transition-property: outline;
+	    transition-duration: 0.4s;
+		}
+
+		.forms-inner input:focus {
+			outline-color: #b2b874;
+		}
+
+	.forms-inner h1 {
+		text-align: center;
+	}
+
+	.forms-submit {
+		margin-top: 15px;
+	}
+
+	.close {
+		width: 10px;
+		height: 10px;
+		padding: 0px;
+		border-radius: 2px;
+	}
+
+/* footer (obviously) */
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
+	background: #f2f5f6; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+}
+
+#contact {
+	text-decoration: none;
+	font-weight: bolder;
+	color: #2c2422;
+}
+
+#contact:hover {
+	font-style: italic;
+	color: #d68829;
+}
